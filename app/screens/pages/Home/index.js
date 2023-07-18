@@ -14,10 +14,10 @@ import { Colors, Width, horizontalScale, moderateScale } from '@styles/index'
 import images from '@images/index'
 import Container, { Content } from '@templates/Container'
 import BannerCarousel from '@atoms/Carousel'
-import adapters from './utils/adapters'
 import moment from 'moment'
 import { ScrollView } from 'react-native-gesture-handler'
 import Carousel from 'react-native-reanimated-carousel'
+import adapters from '@utils/adapters'
 
 function Home({ navigation, route }) {
   const [dataNowPlaying, setDataNowPlaying] = useState()
@@ -102,6 +102,7 @@ function Home({ navigation, route }) {
               background={Colors.Transparent}
               horizontal={-16}
             />
+
             <View>
               <View
                 style={styles.containerTextPromo}
@@ -114,7 +115,7 @@ function Home({ navigation, route }) {
                 loop
                 data={dataNowPlaying}
                 width={Width * 0.95}
-                height={300}
+                height={250}
                 autoPlay={true}
                 mode="parallax"
                 autoPlayInterval={4000}
@@ -151,7 +152,7 @@ function Home({ navigation, route }) {
               />
             </View>
 
-            <View>
+            <View style={{ marginTop: horizontalScale(50) }}>
               <View
                 style={styles.containerTextPromo}
                 color={Colors.TextColor.Teks80}>
@@ -163,7 +164,7 @@ function Home({ navigation, route }) {
                 loop
                 data={dataPopular}
                 width={Width * 0.95}
-                height={300}
+                height={250}
                 autoPlay={true}
                 mode="parallax"
                 autoPlayInterval={4000}
@@ -200,7 +201,7 @@ function Home({ navigation, route }) {
               />
             </View>
 
-            <View>
+            <View style={{ marginTop: horizontalScale(50) }}>
               <View
                 style={styles.containerTextPromo}
                 color={Colors.TextColor.Teks80}>
@@ -212,7 +213,7 @@ function Home({ navigation, route }) {
                 loop
                 data={dataUpComing}
                 width={Width * 0.95}
-                height={300}
+                height={250}
                 autoPlay={true}
                 mode="parallax"
                 autoPlayInterval={4000}
@@ -281,6 +282,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     paddingHorizontal: horizontalScale(16),
-    marginBottom: horizontalScale(18)
+    marginBottom: horizontalScale(10)
   }
 })

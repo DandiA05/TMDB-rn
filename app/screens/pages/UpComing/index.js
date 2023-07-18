@@ -8,11 +8,11 @@ import {
 } from 'react-native'
 
 import { Header, Text } from '@atoms/index'
-import adapters from './utils/adapters'
 import Container, { Content } from '@templates/Container'
 import images from '@images/index'
 import { Colors, horizontalScale } from '@styles/index'
 import moment from 'moment'
+import adapters from '@utils/adapters'
 
 function UpComing({ navigation, route }) {
   const [data, setData] = useState()

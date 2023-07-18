@@ -8,12 +8,12 @@ import {
 } from 'react-native'
 
 import { Button, Header, Text } from '@atoms/index'
-import adapters from './utils/adapters'
 import Container, { Content } from '@templates/Container'
 import images from '@images/index'
 import { Colors, horizontalScale } from '@styles/index'
 import { TouchableOpacity } from 'react-native-gesture-handler'
 import moment from 'moment'
+import adapters from '@utils/adapters'
 
 function NowPlaying({ navigation, route }) {
   const [data, setData] = useState()
