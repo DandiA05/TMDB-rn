@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splashscreen_bg">#74b9ff</color>
+    <color name="background_color">#FBFBFB</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="primary">#00376a</color>
+    <color name="primary_dark">#213c51</color>
+
+    <color name="status_bar_light">#FBFBFB</color>
+    <color name="status_bar_dark">#17151b</color>
+</resources>

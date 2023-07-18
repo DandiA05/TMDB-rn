@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "baseUrl": ".",
+    "target": "es6",
+    "paths": {
+      "@router/*": ["./app/services/router/*"],
+      "@utils/*": ["./app/utils/*"],
+      "@addons/*": ["./app/components/addons/*"],
+      "@atoms/*": ["./app/components/atoms/*"],
+      "@molecules/*": ["./app/components/molecules/*"],
+      "@organism/*": ["./app/components/organism/*"],
+      "@pages/*": ["./app/screens/pages/*"],
+      "@templates/*": ["./app/screens/templates/*"],
+      "@config/*": ["./app/config/*"],
+      "@kernel/*": ["./app/kernel/*"],
+      "@storage/*": ["./app/store/storage/*"],
+      "@actions/*": ["./app/store/actions/*"],
+      "@reducers/*": ["./app/store/reducers/*"],
+      "@middleware/*": ["./app/services/middleware/*"],
+      "@satellite/*": ["./app/services/satellite/*"],
+      "@images/*": ["./app/assets/images/*"],
+      "@styles/*": ["./app/assets/styles/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}
